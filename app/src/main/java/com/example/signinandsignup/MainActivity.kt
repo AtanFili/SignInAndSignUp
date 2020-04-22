@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
             var intent =Intent(applicationContext,LoginActivity::class.java)
             startActivity(intent)
 
-            //This is test for GitHub
         }
         button_main_signUP.setOnClickListener {
             var intent=Intent(applicationContext,SignUpActivity::class.java)
