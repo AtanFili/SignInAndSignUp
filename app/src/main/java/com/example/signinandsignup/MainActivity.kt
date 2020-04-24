@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import layout.LoginActivity2
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,12 +13,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         button_main_signIN.setOnClickListener {
-            var intent =Intent(applicationContext,LoginActivity::class.java)
+            var intent =Intent(applicationContext,LoginActivity2::class.java)
             startActivity(intent)
 
         }
         button_main_signUP.setOnClickListener {
-            var intent=Intent(applicationContext,SignUpActivity::class.java)
+            var intent=Intent(applicationContext,SignUpActivity2::class.java)
             startActivity(intent)
         }
     }
